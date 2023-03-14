@@ -13,3 +13,10 @@
 1 -> SELECT * FROM film WHERE replacement_cost BETWEEN 12.99 AND 16.99  <br/>
 2 -> SELECT * FROM actor WHERE first_name IN('Penelope', 'Nick', 'Ed')   <br/>
 3 -> SELECT * FROM film WHERE rental_rate IN(0,99, 2.99, 4.99) AND replacement_cost IN(12,99, 15.99, 28.99)   <br/>
+
+## 3.Ödev: <br/>
+![Screenshot 2023-03-14 at 15 22 13](https://user-images.githubusercontent.com/45699509/224999744-7a59b217-8514-4ddd-8f7c-1d51aedab550.png)  <br/>
+1-> SELECT country FROM country WHERE LIKE 'A%a'  <br/>
+2-> SELECT country FROM country WHERE LIKE '_____n'  <br/>
+3-> SELECT title FROM film WHERE ILIKE '%t%t%t%t%'  <br/>
+4-> SELECT title FROM film WHERE LIKE 'C%' AND length > 90 AND rental_rate = 2.99 <br/>
