@@ -1,4 +1,3 @@
-# Patika-Sql-Egitimi
 ## 1.Ödev: <br/>
 ![Screenshot 2023-03-14 at 14 52 45](https://user-images.githubusercontent.com/45699509/224992852-03a7cf94-a496-4500-bda8-e9e1a62faeed.png) <br/>
 1 -> SELECT tile, description FROM film   <br/>
@@ -30,4 +29,12 @@
 5-> SELECT COUNT(*) FROM city WHERE city_name ILIKE '%r' <br/>
 
 <hr/>
+
+## 5.Ödev: <br/>
+![Screenshot 2023-03-14 at 15 54 41](https://user-images.githubusercontent.com/45699509/225007206-40970377-573f-45cd-91bc-a32e38d67522.png) <br/>
+1-> SELECT * FROM film WHERE title LIKE 'n%' ORDER BY length DESC LIMIT 5 <br/>
+2-> SELECT * FROM film WHERE title LIKE '%n' ORDER BY length ASC LIMIT 5 OFFSET 5 <br/>
+3-> SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4 <br/>
+
+
 
