@@ -24,7 +24,10 @@
 ## 4.Ödev: <br/>
 ![Screenshot 2023-03-14 at 15 30 33](https://user-images.githubusercontent.com/45699509/225001591-c60a6b29-7102-4ae0-9845-3e0a3ab3dde0.png)  <br/>
 1-> SELECT DISTINCT replacement_cost FROM film <br/>
-2-> SELECT DISTINCT COUNT(replacement_cost) FROM film  <br/>
+2-> SELECT COUNT(DISTINCT replacement_cost) FROM film  <br/>
 3-> SELECT * FROM film WHERE title LIKE 'T%' AND rating = 'G' <br/>
 4-> SELECT COUNT(*) FROM country WHERE country_name LIKE '_____' <br/>
 5-> SELECT COUNT(*) FROM city WHERE city_name ILIKE '%r' <br/>
+
+<hr/>
+
