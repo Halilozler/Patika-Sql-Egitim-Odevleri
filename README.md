@@ -6,3 +6,10 @@
 3 -> SELECT * FROM film WHERE rental_rate = 0.99 AND (replacement_cost = 12.99 OR replacement_cost = 28.99) <br/>
 4 -> SELECT last_name FROM customer WHERE first_name = 'Mary' <br/>
 5 -> SELECT * FROM film WHERE NOT (length > 50 AND (rental_rate = 2.99 OR rental_rate = 4.99))  <br/>
+
+
+## 2.Ödev: <br/>
+![Screenshot 2023-03-14 at 15 03 41](https://user-images.githubusercontent.com/45699509/224995507-6a66eaea-b96f-4741-b990-2b05a2921254.png) <br/>
+1 -> SELECT * FROM film WHERE replacement_cost BETWEEN 12.99 AND 16.99  <br/>
+2 -> SELECT * FROM actor WHERE first_name IN('Penelope', 'Nick', 'Ed')   <br/>
+3 -> SELECT * FROM film WHERE rental_rate IN(0,99, 2.99, 4.99) AND replacement_cost IN(12,99, 15.99, 28.99)   <br/>
