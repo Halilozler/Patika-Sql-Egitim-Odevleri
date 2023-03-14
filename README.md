@@ -43,4 +43,13 @@
 3-> SELECT MAX(length) FROM film WHERE rental_rate = 0.99  <br/>
 4-> SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE length = 150  <br/>
 
+## 7.Ödev: <br/>
+![Screenshot 2023-03-14 at 16 15 33](https://user-images.githubusercontent.com/45699509/225012681-c2ea62d6-d2fb-46d6-acab-8650cbe637c7.png). <br/>
+1-> SELECT * FROM film GROUP BY rating <br/>
+2-> SELECT * FROM film GROUP BY replacement_cost HAVING COUNT(*) > 50 <br/>
+3-> SELECT COUNT(*) FROM customer GROUP BY store_id  <br/>
+3-> SELECT country_id,COUNT(country_id) FROM city GROUP BY country_id ORDER BY COUNT(country_id) LIMIT 1 <br/>
+
+
+
 
