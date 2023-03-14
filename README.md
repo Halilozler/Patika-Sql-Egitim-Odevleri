@@ -1,5 +1,5 @@
 # Patika-Sql-Egitimi
-##1.Ödev:
+## 1.Ödev: <br/>
 ![Screenshot 2023-03-14 at 14 52 45](https://user-images.githubusercontent.com/45699509/224992852-03a7cf94-a496-4500-bda8-e9e1a62faeed.png) <br/>
 1 -> SELECT tile, description FROM film   <br/>
 2 -> SELECT * FROM film WHERE length > 60 AND length < 75 <br/>
