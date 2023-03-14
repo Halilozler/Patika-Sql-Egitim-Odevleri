@@ -36,5 +36,11 @@
 2-> SELECT * FROM film WHERE title LIKE '%n' ORDER BY length ASC LIMIT 5 OFFSET 5 <br/>
 3-> SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4 <br/>
 
+## 6.Ödev: <br/>
+![Screenshot 2023-03-14 at 16 05 55](https://user-images.githubusercontent.com/45699509/225009997-fe7a4a2b-3111-429e-a964-0f0cc0f62ce6.png) <br/>
+1-> SELECT AVG(rental_rate) FROM film <br/>
+2-> SELECT COUNT(*) FROM film WHERE film_name LIKE 'C%'  <br/>
+3-> SELECT MAX(length) FROM film WHERE rental_rate = 0.99  <br/>
+4-> SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE length = 150  <br/>
 
 
