@@ -44,12 +44,16 @@
 4-> SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE length = 150  <br/>
 
 ## 7.Ödev: <br/>
-![Screenshot 2023-03-14 at 16 15 33](https://user-images.githubusercontent.com/45699509/225012681-c2ea62d6-d2fb-46d6-acab-8650cbe637c7.png). <br/>
+![Screenshot 2023-03-14 at 16 15 33](https://user-images.githubusercontent.com/45699509/225012681-c2ea62d6-d2fb-46d6-acab-8650cbe637c7.png) <br/>
 1-> SELECT * FROM film GROUP BY rating <br/>
 2-> SELECT * FROM film GROUP BY replacement_cost HAVING COUNT(*) > 50 <br/>
 3-> SELECT COUNT(*) FROM customer GROUP BY store_id  <br/>
 3-> SELECT country_id,COUNT(country_id) FROM city GROUP BY country_id ORDER BY COUNT(country_id) LIMIT 1 <br/>
 
-
-
+## 8.Ödev: <br/>
+![Screenshot 2023-03-14 at 16 37 06](https://user-images.githubusercontent.com/45699509/225018484-7e128ec3-311a-4049-af28-86fd8ac31711.png) <br/>
+1-> CREATE TABLE employee( id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100)); <br/>
+2-> INSERT INTO employee (id, name, birthday, email) values (1, 'Ronstring', '1981-07-19', 'zmayesk@skyrock.com'); <br/>
+3-> UPDATE employee SET name = 'Silinecek' WHERE id > 1 <br/>
+4-> DELETE FROM employee WHERE id BETWEEN 46 AND 50 <br/>
 
