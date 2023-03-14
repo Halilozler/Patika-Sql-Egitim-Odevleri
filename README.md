@@ -57,3 +57,25 @@
 3-> UPDATE employee SET name = 'Silinecek' WHERE id > 1 <br/>
 4-> DELETE FROM employee WHERE id BETWEEN 46 AND 50 <br/>
 
+## 9.Ödev: <br/>
+![Screenshot 2023-03-14 at 22 22 48](https://user-images.githubusercontent.com/45699509/225114864-5d528040-6e45-45f2-8f33-71570b31b30b.png) <br/>
+1-> SELECT c.city_name, co.country_name FROM city c INNER JOIN country co ON c.Id = co.City_Id <br/>
+2-> SELECT c.first_name, c.last_name, p.payment_id FROM customer c INNER JOIN payment p ON c.Id = co.Country_Id <br/>
+3-> SELECT r.rental_id, c.first_name, c.last_name FROM customer c INNER JOIN rental r ON c.Id = r.Customer_Id <br/>
+
+## 10.Ödev: <br/>
+![Screenshot 2023-03-14 at 22 33 54](https://user-images.githubusercontent.com/45699509/225117140-246638cb-859d-4f36-89fb-f05edd40a27c.png) <br/>
+1-> SELECT c.city_name, co.country_name FROM city c LEFT JOIN country co ON c.Id = co.City_Id <br/>
+2-> SELECT c.first_name, c.last_name, p.payment_id FROM customer c RIGHT JOIN payment p ON c.Id = co.Country_Id <br/>
+3-> SELECT r.rental_id, c.first_name, c.last_name FROM customer c FULL JOIN rental r ON c.Id = r.Customer_Id <br/>
+
+## 11.Ödev: <br/>
+![Screenshot 2023-03-14 at 22 39 37](https://user-images.githubusercontent.com/45699509/225118205-9590a49a-1892-4880-9524-b72096f756f5.png) <br/>
+1-> ( SELECT first_name FROM actor ) UNION ( SELECT first_name FROM customer ) <br/>
+2-> ( SELECT first_name FROM actor ) INTERSECT ( SELECT first_name FROM customer ) <br/>
+3-> ( SELECT first_name FROM actor ) EXCEPT ( SELECT first_name FROM customer ) <br/>
+4-> ( SELECT first_name FROM actor ) UNION ALL ( SELECT first_name FROM customer ) <br/>
+4-> ( SELECT first_name FROM actor ) INTERSECT ALL ( SELECT first_name FROM customer ) <br/>
+4-> ( SELECT first_name FROM actor ) EXCEPT ( SELECT first_name FROM customer ) <br/>
+
+
