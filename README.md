@@ -84,3 +84,11 @@
 2-> SELECT COUNT(*) FROM film WHERE rental_rate > (SELECT MAX(rental_rate) FROM film) <br/>
 3-> SELECT * FROM film WHERE rental_rate = (SELECT MIN(rental_rate) FROM film) AND replacement_cost = (SELECT MIN(replacement_cost) FROM film)<br/>
 4-> SELECT * FROM payment GROUP BY customer_id ORDER BY most_payments DESC <br/>
+
+## Genel Tekrar: <br/>
+![Screenshot 2023-03-15 at 12 21 42](https://user-images.githubusercontent.com/45699509/225264952-96c9ccfe-d7f3-43bd-93fc-dd255445c171.png)  <br/>
+1-> SELECT title, length, replacement_cost FROM film WHERE title LIKE "K%" ORDER BY length DESC, replacement_cost ASC LIMIT 3 <br/>
+2-> SELECT COUNT(*), rating FROM film GROUP BY reting ORDER BY COUNT(*) DESC LIMIT 1 <br/>
+3-> SELECT SUM(amount), c.first_name, c.last_name FROM payment p JOIN customer c ON c.customer_id = p.customer_id GROUP BY p.customer_id, c.first_name, c.last_name ORDER BY SUM(amount) DESC LIMIT 1 <br/>
+4-> SELECT COUNT(*), c.name FROM category c JOIN film_category fc ON fc.category_id = c.category_id JOIN film f ON f.film_id = fc.film_id GROUP BY c.name <br/>
+5-> SELECT COUNT(*) FROM film WHERE title ILIKE "%e%e%e%e%" <br/>
