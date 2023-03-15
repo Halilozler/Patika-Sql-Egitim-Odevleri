@@ -78,4 +78,9 @@
 4-> ( SELECT first_name FROM actor ) INTERSECT ALL ( SELECT first_name FROM customer ) <br/>
 4-> ( SELECT first_name FROM actor ) EXCEPT ( SELECT first_name FROM customer ) <br/>
 
-
+## 13.Ödev: <br/>
+![Screenshot 2023-03-15 at 12 00 47](https://user-images.githubusercontent.com/45699509/225258987-d3ee0f55-40e0-46a7-889d-f9c40c6fecd9.png) <br/>
+1-> SELECT COUNT(*) FROM film WHERE length > (SELECT AVG(length) FROM film) <br/>
+2-> SELECT COUNT(*) FROM film WHERE rental_rate > (SELECT MAX(rental_rate) FROM film) <br/>
+3-> SELECT * FROM film WHERE rental_rate = (SELECT MIN(rental_rate) FROM film) AND replacement_cost = (SELECT MIN(replacement_cost) FROM film)<br/>
+4-> SELECT * FROM payment GROUP BY customer_id ORDER BY most_payments DESC <br/>
